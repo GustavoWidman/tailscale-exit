@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  tailscale:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tailscale-exit-node
+    restart: unless-stopped
+    volumes:
+      - ./config/tailscale/:/var/lib/
+    privileged: true
+    cap_add:
+      - net_admin
