@@ -4,8 +4,8 @@ This repository contains a few utilities to bring up a Tailscale exit node quick
 
 ## Requirements
 
-- Docker
-- Docker-compose
+- docker
+- docker-compose
 
 ## Usage
 
