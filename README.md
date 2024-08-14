@@ -18,6 +18,10 @@ This repository contains a few utilities to bring up a Tailscale exit node quick
 7. Once you've made sure everything is working, you can stop the container by doing Ctrl+C and then `docker compose down` (or `docker-compose down`)
 8. Run it in a detached manner by doing `docker compose up -d` (or `docker-compose up -d`) and don't worry about it anymore :)
 
+# Size in filesystem
+
+The image size, after built, is about 80MB-90MB. The folder itself (after deleting auth.key) is about 70-80KB.
+
 ## Notes
 
 - You can delete the `auth.key` file after you've made sure everything is working.
